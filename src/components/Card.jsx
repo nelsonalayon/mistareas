@@ -23,19 +23,16 @@ class TaskCard extends React.Component {
             </Card.Body>
             <Card.Footer>
                 <Row>
-                    <Col md={2} xs={4}>
+                    <Col md={3} xs={4}>
                         <DropdownButton title="Priority">
-                            <Dropdown.Item href="#/action-1">Hi</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Medium</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Low</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">Hi <FontAwesomeIcon icon={faExclamationCircle}  size="1x" color="red" /></Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Medium <FontAwesomeIcon icon={faExclamationTriangle}  size="1x" color="orange" /></Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Low <FontAwesomeIcon icon={faLeaf}  size="1x" color="green" /></Dropdown.Item>
                         </DropdownButton>
                     </Col>
-                    {/* <Col md={2} xs={8}><FontAwesomeIcon icon={faExclamationCircle}  size="2x" color="red" /></Col>
-                    <Col md={2} xs={8}><FontAwesomeIcon icon={faExclamationTriangle}  size="2x" color="orange" /></Col> */}
-                    <Col md={2} xs={8}><FontAwesomeIcon icon={faLeaf}  size="2x" color="green" /></Col>
-                    <Col md={2} xs={4}><strong>Deadline</strong></Col>
-                    <Col md={2} xs={4}><strong>13/08/20</strong></Col>
-                    <Col md={{ span: 2, offset: 1 }}>
+                    <Col md={3} xs={4}><strong>Deadline</strong></Col>
+                    <Col md={3} xs={4}> <p> 13/08/20</p></Col>
+                    <Col md={3}>
                         <DropdownButton title="Move to">
                             <Dropdown.Item href="#/action-1">To Do</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Doing</Dropdown.Item>

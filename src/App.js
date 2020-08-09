@@ -12,10 +12,10 @@ function App() {
           <Col sm={4}>
             <TaskCard />
           </Col>
-          {/* <Col sm={4}>
+          <Col sm={4}><TaskCard />
           </Col>
-          <Col sm={4}>
-          </Col> */}
+          <Col sm={4}><TaskCard />
+          </Col>
         </Row>
       </Container>
     </div>
